@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" 
+    directory: "{{ dir.with.special.chars }}"
+    versioning-strategy: increase
+    groups:
+      version-updates:
+        patterns:
+          - "*"
+        applies-to: version-updates
+      security-updates:
+        patterns:
+          - "*"
+        applies-to: security-updates
