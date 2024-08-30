@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip" 
-    directory: "\\{\\{\\ dir.with.special.chars\\ \\}\\}"
+    directory: "{{ dir.with.special.chars }}"
     versioning-strategy: increase
     schedule:
       interval: "weekly"
